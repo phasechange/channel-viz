@@ -16,7 +16,7 @@
 		defaultFeeds	= [1206868648], // Comma separated array of Xively Feed ID numbers
 		applicationName	= 'Craftsbury Ice House', // Replaces Xively logo in the header
 		dataDuration	= '12hours', // Default duration of data to be displayed // ref: https://xively.com/dev/docs/api/data/read/historical_data/
-		dataInterval	= 0, // Default interval for data to be displayed (in seconds)
+		dataInterval	= 30, // Default interval for data to be displayed (in seconds)
 		dataColor		= '69ab35', // CSS HEX value of color to represent data (omit leading #)
 		hideForm		= 1; // To hide input form use value of 1, otherwise set to 0
 
