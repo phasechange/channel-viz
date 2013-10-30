@@ -160,6 +160,16 @@
 										series: series
 									});
 
+var legend = new Rickshaw.Graph.Legend({
+    graph: graph,
+    element: document.querySelector('#graph')
+});
+
+var shelving = new Rickshaw.Graph.Behavior.Series.Toggle({
+    graph: graph,
+    legend: legend
+});
+
 									graph.render();
 									
 
