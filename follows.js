@@ -172,6 +172,12 @@
 										ticksTreatment: ticksTreatment
 									});
 									xAxis.render();
+									
+									var legend = new Rickshaw.Graph.Legend({
+    graph: graph,
+    element: document.querySelector('#graph')
+});
+legend.render();
 
 									// Define and Render Y Axis (Datastream Values)
 									var yAxis = new Rickshaw.Graph.Axis.Y( {
