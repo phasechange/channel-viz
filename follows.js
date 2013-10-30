@@ -161,6 +161,21 @@
 									});
 
 									graph.render();
+									
+									var legend = new Rickshaw.Graph.Legend({
+    										graph: graph,
+    										element: document.querySelector('#graph')
+									});
+									
+									var shelving = new Rickshaw.Graph.Behavior.Series.Toggle({
+    										graph: graph,
+    										legend: legend
+									});
+
+									var highlighter = new Rickshaw.Graph.Behavior.Series.Highlight({
+										graph: graph,
+    										legend: legend
+									});
 
 									var ticksTreatment = 'glow';
 
